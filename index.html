@@ -36,12 +36,12 @@
         <nav>
           <span class="caption">INDEX:</span>
           <ul id="TOC">
-            <li><a href="#description" title="introduction">Description</a></li>
-            <li><a href="#features" title="script features">Features</a></li>
-            <li><a href="#options" title="script options">Options</a></li>
-            <li><a href="#instalation" title="script install">Instalation</a></li>
-            <li><a href="#inherited" title="inherited features">Inherited</a></li>
-            <li><a href="#authorship" title="authorship">Authorship</a></li>
+            <li><a data-scroll href="#doctron" title="description">Description</a></li>
+            <li><a data-scroll href="#features" title="script features">Features</a></li>
+            <li><a data-scroll href="#options" title="script options">Options</a></li>
+            <li><a data-scroll href="#instalation" title="script install">Instalation</a></li>
+            <li><a data-scroll href="#inherited" title="inherited features">Inherited</a></li>
+            <li><a data-scroll href="#authorship" title="authorship">Authorship</a></li>
             <!-- <li><a href="#advantages" title="script advantages">Advantages</a></li>
             <li><a href="#disadvantages" title="script disadvantages">Disadvantages</a></li>
             <li><a href="#improvements" title="improvements">Future Improvements (TO-DO)</a></li>
@@ -90,10 +90,10 @@
         
         <h1><a id="doctron" class="anchor" href="#doctron" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>DOCTRON TEMPLATE <sub style="font-size:smaller;">a jsDoc template</sub></h1>
 
-        <p><a href="http://guerratron.github.io/doctron" title="Doctron Page"><img src="./static/img/doctron-logo.png" alt="doctron logo" title="doctron Github page"></a> <em>Responsive (javascript) jsDoc template. (based in default template</em>)</p>
+        <p><a href="http://guerratron.github.io/doctron" title="Doctron Page"><img src="./img/doctron_logo_mini.png" alt="doctron logo" title="doctron Github page"></a> <em>Responsive (javascript) jsDoc template. (based in default template</em>)</p>
       </blockquote>
 
-      <h1><a id="description" class="anchor" href="#description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>DESCRIPTION</h1>
+      <h1 style="display:none;"><a id="description" class="anchor" href="#description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>DESCRIPTION</h1>
 
       <p>The <strong>doctron</strong> is a <em>'jsDoc'</em> template. It is based in <strong>Default template</strong>.  </p>
 
@@ -148,30 +148,33 @@
 
       <p>These options could be as follows in a configuration file sample JSDoc :</p>
 
-      <div class="highlight highlight-source-json"><pre>{
-        <span class="pl-ii">...,</span>
-        <span class="pl-s"><span class="pl-pds">"</span>templates<span class="pl-pds">"</span></span> : {
-          <span class="pl-ii">...,</span>
-          <span class="pl-s"><span class="pl-pds">"</span>debug<span class="pl-pds">"</span></span>       : <span class="pl-c1">true</span>,
-          <span class="pl-s"><span class="pl-pds">"</span>logo<span class="pl-pds">"</span></span>        : <span class="pl-s"><span class="pl-pds">"</span>img/wrapperTracer-logo.png<span class="pl-pds">"</span></span>,
-          <span class="pl-s"><span class="pl-pds">"</span>responsive<span class="pl-pds">"</span></span>  : <span class="pl-c1">true</span>,
-          <span class="pl-s"><span class="pl-pds">"</span>author<span class="pl-pds">"</span></span>      : <span class="pl-s"><span class="pl-pds">"</span>&lt;a href='mailto:dinertron@gmail.com' title='author'&gt;GuerraTron&lt;/a&gt;<span class="pl-pds">"</span></span>,
-          <span class="pl-s"><span class="pl-pds">"</span>footer<span class="pl-pds">"</span></span>      : <span class="pl-c1">true</span>,
-          <span class="pl-s"><span class="pl-pds">"</span>copyright<span class="pl-pds">"</span></span>   :  <span class="pl-s"><span class="pl-pds">"</span>2016 (c) Juan Jose Guerra Haba<span class="pl-pds">"</span></span>,
-          <span class="pl-s"><span class="pl-pds">"</span>theme<span class="pl-pds">"</span></span>       : <span class="pl-s"><span class="pl-pds">"</span>lighter<span class="pl-pds">"</span></span>,
-          <span class="pl-s"><span class="pl-pds">"</span>changeTheme<span class="pl-pds">"</span></span> : <span class="pl-c1">true</span>,
-          <span class="pl-s"><span class="pl-pds">"</span>totop<span class="pl-pds">"</span></span>       : <span class="pl-c1">false</span>,
-          <span class="pl-s"><span class="pl-pds">"</span>meta<span class="pl-pds">"</span></span>        : {
-            <span class="pl-s"><span class="pl-pds">"</span>title<span class="pl-pds">"</span></span>       : <span class="pl-s"><span class="pl-pds">"</span>WrapperTracer :: Rastreo de Objetos JS - by GUERRATRON<span class="pl-pds">"</span></span>,
-            <span class="pl-s"><span class="pl-pds">"</span>description<span class="pl-pds">"</span></span> : <span class="pl-s"><span class="pl-pds">"</span>WrapperTracer :: Rastreo de Objetos JS and its methods traits - by GUERRATRON<span class="pl-pds">"</span></span>,
-            <span class="pl-s"><span class="pl-pds">"</span>keywords<span class="pl-pds">"</span></span>    : <span class="pl-s"><span class="pl-pds">"</span>wrappertracer,js,code,debug,trait,traits,trace,tracer,wrapper,guerratron<span class="pl-pds">"</span></span>,
-            <span class="pl-s"><span class="pl-pds">"</span>charset<span class="pl-pds">"</span></span>     : <span class="pl-s"><span class="pl-pds">"</span>utf-8<span class="pl-pds">"</span></span>,
-            <span class="pl-s"><span class="pl-pds">"</span>language<span class="pl-pds">"</span></span>    : <span class="pl-s"><span class="pl-pds">"</span>es<span class="pl-pds">"</span></span>
-          },
-          <span class="pl-ii">...</span>
-        },
-        <span class="pl-ii">...</span>
-      }</pre>
+      <div class="highlight highlight-source-json">
+<pre>
+  {
+    <span class="pl-ii">...,</span>
+    <span class="pl-s"><span class="pl-pds">"</span>templates<span class="pl-pds">"</span></span> : {
+      <span class="pl-ii">...,</span>
+      <span class="pl-s"><span class="pl-pds">"</span>debug<span class="pl-pds">"</span></span>       : <span class="pl-c1">true</span>,
+      <span class="pl-s"><span class="pl-pds">"</span>logo<span class="pl-pds">"</span></span>        : <span class="pl-s"><span class="pl-pds">"</span>img/wrapperTracer-logo.png<span class="pl-pds">"</span></span>,
+      <span class="pl-s"><span class="pl-pds">"</span>responsive<span class="pl-pds">"</span></span>  : <span class="pl-c1">true</span>,
+      <span class="pl-s"><span class="pl-pds">"</span>author<span class="pl-pds">"</span></span>      : <span class="pl-s"><span class="pl-pds">"</span>&lt;a href='mailto:dinertron@gmail.com' title='author'&gt;GuerraTron&lt;/a&gt;<span class="pl-pds">"</span></span>,
+      <span class="pl-s"><span class="pl-pds">"</span>footer<span class="pl-pds">"</span></span>      : <span class="pl-c1">true</span>,
+      <span class="pl-s"><span class="pl-pds">"</span>copyright<span class="pl-pds">"</span></span>   :  <span class="pl-s"><span class="pl-pds">"</span>2016 (c) Juan Jose Guerra Haba<span class="pl-pds">"</span></span>,
+      <span class="pl-s"><span class="pl-pds">"</span>theme<span class="pl-pds">"</span></span>       : <span class="pl-s"><span class="pl-pds">"</span>lighter<span class="pl-pds">"</span></span>,
+      <span class="pl-s"><span class="pl-pds">"</span>changeTheme<span class="pl-pds">"</span></span> : <span class="pl-c1">true</span>,
+      <span class="pl-s"><span class="pl-pds">"</span>totop<span class="pl-pds">"</span></span>       : <span class="pl-c1">false</span>,
+      <span class="pl-s"><span class="pl-pds">"</span>meta<span class="pl-pds">"</span></span>        : {
+        <span class="pl-s"><span class="pl-pds">"</span>title<span class="pl-pds">"</span></span>       : <span class="pl-s"><span class="pl-pds">"</span>WrapperTracer :: Rastreo de Objetos JS - by GUERRATRON<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>description<span class="pl-pds">"</span></span> : <span class="pl-s"><span class="pl-pds">"</span>WrapperTracer :: Rastreo de Objetos JS and its methods traits - by GUERRATRON<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>keywords<span class="pl-pds">"</span></span>    : <span class="pl-s"><span class="pl-pds">"</span>wrappertracer,js,code,debug,trait,traits,trace,tracer,wrapper,guerratron<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>charset<span class="pl-pds">"</span></span>     : <span class="pl-s"><span class="pl-pds">"</span>utf-8<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>language<span class="pl-pds">"</span></span>    : <span class="pl-s"><span class="pl-pds">"</span>es<span class="pl-pds">"</span></span>
+      },
+      <span class="pl-ii">...</span>
+    },
+    <span class="pl-ii">...</span>
+  }
+</pre>
       </div>
 
       <h1><a id="instalation" class="anchor" href="#instalation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>INSTALATION</h1>
@@ -198,9 +201,14 @@
       <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> modified by <a href="https://github.com/guerratron">guerratron</a>. <img src="img/torotron_logo.png" alt="guerratron logo" title="guerratron logo" /></span>
     </footer>
     
+    <!-- TO-TOP BUTTON -->
+    <a data-scroll data-options='{ "easing": "easeOutQuad" }' class="totop" href="#"><span style="font-size: x-large">&Delta;</span></a>
+    
     <!-- SLICK SLIDE
 			<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
 			<script type="text/javascript" src="javascripts/slick/slick.min.js"></script> -->
+    <!-- SMOOTH-SCROLL -->
+    <script type="text/javascript" src="javascripts/smooth-scroll/smooth-scroll.min.js"></script>
     <script>
 				// Can also be used with $(window).load(function() {
 				$(document).ready(function() {
@@ -226,6 +234,9 @@
           
           //DISABLED BUTTONS
           $('.disabled').css( {"opacity": 0.5, "background": "#333333"} );
+          
+          //SMOOTH-SCROLL by https://github.com/cferdinandi THANKS!
+          smoothScroll.init();
 				});
 		</script>
   

@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>Doctron by guerratron</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="DocTron - a (javascript) jsDoc template - by Juanjo Guerra Haba" />
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
 		<link rel="stylesheet" type="text/css" href="stylesheets/template.css" media="screen">
@@ -30,154 +31,169 @@
 
     <section class="main-content">
       <blockquote>
-<hr>
+        <hr>
 
-<p>'doctron' (jsDoc template) - Responsive jsDoc template. (based in <em>default template</em>)<br>
-  Author: Juan José Guerra Haba - <a href="mailto:dinertron@gmail.com">dinertron@gmail.com</a> - 2016 April<br>
-  License: Open GPL v.3. Keep credit, please.<br>
-  Versión: 1.0.0<br>
-  Folder: doctron  </p>
+        <nav>
+          <span class="caption">INDEX:</span>
+          <ul id="TOC">
+            <li><a href="#description" title="introduction">Description</a></li>
+            <li><a href="#features" title="script features">Features</a></li>
+            <li><a href="#options" title="script options">Options</a></li>
+            <li><a href="#instalation" title="script install">Instalation</a></li>
+            <li><a href="#inherited" title="inherited features">Inherited</a></li>
+            <li><a href="#authorship" title="authorship">Authorship</a></li>
+            <!-- <li><a href="#advantages" title="script advantages">Advantages</a></li>
+            <li><a href="#disadvantages" title="script disadvantages">Disadvantages</a></li>
+            <li><a href="#improvements" title="improvements">Future Improvements (TO-DO)</a></li>
+            <li><a href="#crossbrowser" title="compatibility">Cross-Browser</a></li>
+            <li><a href="#oncomplete" title="script event">onComplete() Event</a></li>
+            <li><a href="#rslib-object" title="script objects">rsLIB Object</a></li>
+            <li><a href="#requirements" title="script requirements">Requirements</a></li>
+            <li><a href="#usage" title="the script usage">Usage</a></li>
+            <li><a href="#web-flow-creation" title="the script web-flow-creation">Web flow creation</a></li>
+            <li><a href="#developing" title="develop by">Developing</a></li>
+            <li><a href="#tools" title="tools for write code">Tools</a></li>
+            <li><a href="#author" title="script author">Author</a></li> -->
+          </ul>
+          <br class="clearfix" />
+        </nav>
+        <!-- SLICK SLIDE
+        <section class="carousel" style="text-align: center;">
+            <div class="slick-slide-target1">
+              <div>
+                <a href="img/zonesGUI.png"> <img src="img/zonesGUI.png" alt="GUI areas" title="GUI areas" /> </a>
+                <span style="font-size:smaller;">buttons, canvas, options, footer, ...</span>
+              </div>
+              <div>	<a href="img/zoneOptions2.png"> <img src="img/zoneOptions2.png" alt="GUI options area" title="options area" /> </a> </div>
+              <div>
+                <a href="img/zoneCoordinates.png"> <img src="img/zoneCoordinates.png" alt="GUI coordinates area" title="coordinates area" /> </a>
+                <span style="font-size:smaller;">Coordinates area</span>
+              </div>
+              <div>	<a href="img/ex1.jpg"> <img src="img/ex1.jpg" alt="example-1" title="bexample 1" /> </a> </div>
+              <div>	<a href="img/ex2.png"> <img src="img/ex2.png" alt="example-2" title="example 2" /> </a> </div>
+              <div>	<a href="img/ex3.png"> <img src="img/ex3.png" alt="example-3" title="example 3" /> </a> </div>
+              <div>	<a href="img/ex4.png"> <img src="img/ex4.png" alt="example-4" title="example 4" /> </a> </div>
+              <div>	<a href="img/ex5.png"> <img src="img/ex5.png" alt="example-5" title="example 5" /> </a> </div>
+              <div>	<a href="img/canvasShapesButtons.png"> <img src="img/canvasShapesButtons.png" alt="GUI buttons area" title="buttons area" /> </a> </div>
+            </div>
+        </section> -->
 
-<hr>
-</blockquote>
+        <header>
+          'doctron' (jsDoc template) - Responsive jsDoc template. (based in <em>default template</em>)<br>
+          Author: Juan José Guerra Haba - <a href="&#x6d;&#97;&#105;&#108;&#116;&#x6f;&#x3a;&#100;&#105;&#110;&#x65;&#x72;&#x74;&#114;&#x6f;&#110;&#64;&#x67;&#109;&#x61;&#x69;&#x6c;&#46;&#99;&#x6f;&#x6d;">&#100;&#105;&#110;&#x65;&#x72;&#x74;&#114;&#x6f;&#110;&#64;&#x67;&#109;&#x61;&#x69;&#x6c;&#46;&#99;&#x6f;&#x6d;</a> - 2016 April<br>
+          License: Open GPL v.3. Keep credit, please.<br>
+          Versión: 1.0.0<br>
+          Folder: doctron
+        </header>
 
-<h1>
-<a id="doctron-template" class="anchor" href="#doctron-template" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>DOCTRON TEMPLATE</h1>
+        <hr>
+        
+        <h1><a id="doctron" class="anchor" href="#doctron" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>DOCTRON TEMPLATE <sub style="font-size:smaller;">a jsDoc template</sub></h1>
 
-<p><a href="http://guerratron.github.io/doctron" title="Doctron Page"><img src="./static/img/doctron-logo.png" alt="doctron logo" title="doctron Github page"></a> 
-Responsive jsDoc template. (based in <em>default template</em>) </p>
+        <p><a href="http://guerratron.github.io/doctron" title="Doctron Page"><img src="./static/img/doctron-logo.png" alt="doctron logo" title="doctron Github page"></a> <em>Responsive (javascript) jsDoc template. (based in default template</em>)</p>
+      </blockquote>
 
-<h1>
-<a id="description" class="anchor" href="#description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>DESCRIPTION</h1>
+      <h1><a id="description" class="anchor" href="#description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>DESCRIPTION</h1>
 
-<p>The <strong>doctron</strong> is a <em>'jsDoc'</em> template. It is based in <strong>Default template</strong>.  </p>
+      <p>The <strong>doctron</strong> is a <em>'jsDoc'</em> template. It is based in <strong>Default template</strong>.  </p>
 
-<blockquote>
-<p>This template has been given a more updated and modern touch, respecting standards and minified some files to load (were deleted the added fonts). 
-It will has incorporated some new features to enhance functionality. It is more versatile than its predecessor by incorporating more configuration options, thus increasing the customization possibility.
-Now different style themes can be selected, it allows enable 'debug zones' (very useful for developers), responsive design for different screen types and devices, ... and more.</p>
-</blockquote>
+      <blockquote>
+        <p>This template has been given a more updated and modern touch, respecting standards and minified some files to load (were deleted the added fonts). 
+        It will has incorporated some new features to enhance functionality. It is more versatile than its predecessor by incorporating more configuration options, thus increasing the customization possibility.
+        Now different style themes can be selected, it allows enable 'debug zones' (very useful for developers), responsive design for different screen types and devices, ... and more.</p>
+      </blockquote>
 
-<h1>
-<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FEATURES</h1>
+      <h1><a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FEATURES</h1>
 
-<p>The <strong>doctron</strong> template is based in <em>'Default template'</em>, but I adding it a few features for enhanced it.  </p>
+      <p>The <strong>doctron</strong> template is based in <em>'Default template'</em>, but I adding it a few features for enhanced it.  </p>
 
-<ul>
-<li>This template <strong>not requery</strong> any additional fonts.<br>
-</li>
-<li>
-<em>Responsive</em> design.<br>
-</li>
-<li>
-<em>HTML5</em> valid.<br>
-</li>
-<li>'<strong>debug zone</strong>': It allow to developers check the variables and configuration options.<br>
-</li>
-<li>'<strong>toTop</strong>' button.<br>
-</li>
-<li>'<strong>change Theme</strong>' button.<br>
-</li>
-<li>Design <strong>new look</strong>.</li>
-<li>Less size. </li>
-</ul>
+      <ul>
+        <li>This template <strong>not requery</strong> any additional fonts.</li>
+        <li><em>Responsive</em> design.</li>
+        <li><em>HTML5</em> valid.</li>
+        <li><strong>debug zone</strong>': It allow to developers check the variables and configuration options.</li>
+        <li>'<strong>toTop</strong>' button.</li>
+        <li>'<strong>change Theme</strong>' button.</li>
+        <li>Design <strong>new look</strong>.</li>
+        <li>Less size.</li>
+      </ul>
 
-<h1>
-<a id="options" class="anchor" href="#options" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>OPTIONS</h1>
+      <h1><a id="options" class="anchor" href="#options" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>OPTIONS</h1>
 
-<p>This options for configuration they may be included in <strong>jsDoc.conf.json</strong> configuration file within the <em>'templates'</em> section, thus the path will be more or less: </p>
+      <p>This options for configuration they may be included in <strong>jsDoc.conf.json</strong> configuration file within the <em>'templates'</em> section, thus the path will be more or less: </p>
 
-<blockquote>
-<p>jsDoc.conf.json {..., templates: { ... }, ...}  </p>
-</blockquote>
+      <blockquote>
+        <p>jsDoc.conf.json {..., templates: { ... }, ...}</p>
+      </blockquote>
 
-<ul>
-<li>
-<strong>debug</strong> : [boolean] Allow enabled the <em>debug-zone</em>
-</li>
-<li>
-<strong>logo</strong>  : [string] Let the relative path to logo image (png, jpg, gif - min 256px)</li>
-<li>
-<strong>theme</strong> : [string] The name of style theme (light or dark)</li>
-<li>
-<strong>totop</strong> : [boolean] To Top button.</li>
-<li>
-<strong>changeTheme</strong>  : [boolean] A <em>select box</em> to change the theme.</li>
-<li>
-<strong>responsive</strong>    : [boolean] Allow show a responsive design to different screen types and devices</li>
-<li>
-<strong>author</strong>        : [string]  By example a link to author email, on 'footer'. The footer section must be enabled</li>
-<li>
-<strong>copyright</strong>     : [string] A string representing the copyright</li>
-<li>
-<strong>meta</strong>          : [object] A javascript object indicating some <em>HTML meta-tags</em>:
+      <ul>
+        <li><strong>debug</strong> : [boolean] Allow enabled the <em>debug-zone</em></li>
+        <li><strong>logo</strong>  : [string] Let the relative path to logo image (png, jpg, gif - min 256px)</li>
+        <li><strong>theme</strong> : [string] The name of style theme (light or dark)</li>
+        <li><strong>totop</strong> : [boolean] To Top button.</li>
+        <li><strong>changeTheme</strong>  : [boolean] A <em>select box</em> to change the theme.</li>
+        <li><strong>responsive</strong>    : [boolean] Allow show a responsive design to different screen types and devices</li>
+        <li><strong>author</strong>        : [string]  By example a link to author email, on 'footer'. The footer section must be enabled</li>
+        <li><strong>copyright</strong>     : [string] A string representing the copyright</li>
+        <li><strong>meta</strong>          : [object] A javascript object indicating some <em>HTML meta-tags</em>:
+          <ul>
+            <li><strong>title</strong>       : [string] It is the page title</li>
+            <li><strong>description</strong> : [string] The page description, very useful for <strong>SEO</strong> and search engines</li>
+            <li><strong>keywords</strong>    : [string] Like the above, it is used with SEO</li>
+            <li><strong>charset</strong>     : [string] The page charset: <em>utf-8</em>, <em>ascii</em>, <em>utf-16</em>, ...</li>
+            <li><strong>language</strong>    : [string] The page natural language: <em>es</em>, <em>en</em>, ...</li>
+          </ul>
+        </li>
+      </ul>
 
-<ul>
-<li>
-<strong>title</strong>       : [string] It is the page title</li>
-<li>
-<strong>description</strong> : [string] The page description, very useful for <strong>SEO</strong> and search engines</li>
-<li>
-<strong>keywords</strong>    : [string] Like the above, it is used with SEO</li>
-<li>
-<strong>charset</strong>     : [string] The page charset: <em>utf-8</em>, <em>ascii</em>, <em>utf-16</em>, ...</li>
-<li>
-<strong>language</strong>    : [string] The page natural language: <em>es</em>, <em>en</em>, ...</li>
-</ul>
-</li>
-</ul>
+      <p>These options could be as follows in a configuration file sample JSDoc :</p>
 
-<p>These options could be as follows in a configuration file sample JSDoc :</p>
+      <div class="highlight highlight-source-json"><pre>{
+        <span class="pl-ii">...,</span>
+        <span class="pl-s"><span class="pl-pds">"</span>templates<span class="pl-pds">"</span></span> : {
+          <span class="pl-ii">...,</span>
+          <span class="pl-s"><span class="pl-pds">"</span>debug<span class="pl-pds">"</span></span>       : <span class="pl-c1">true</span>,
+          <span class="pl-s"><span class="pl-pds">"</span>logo<span class="pl-pds">"</span></span>        : <span class="pl-s"><span class="pl-pds">"</span>img/wrapperTracer-logo.png<span class="pl-pds">"</span></span>,
+          <span class="pl-s"><span class="pl-pds">"</span>responsive<span class="pl-pds">"</span></span>  : <span class="pl-c1">true</span>,
+          <span class="pl-s"><span class="pl-pds">"</span>author<span class="pl-pds">"</span></span>      : <span class="pl-s"><span class="pl-pds">"</span>&lt;a href='mailto:dinertron@gmail.com' title='author'&gt;GuerraTron&lt;/a&gt;<span class="pl-pds">"</span></span>,
+          <span class="pl-s"><span class="pl-pds">"</span>footer<span class="pl-pds">"</span></span>      : <span class="pl-c1">true</span>,
+          <span class="pl-s"><span class="pl-pds">"</span>copyright<span class="pl-pds">"</span></span>   :  <span class="pl-s"><span class="pl-pds">"</span>2016 (c) Juan Jose Guerra Haba<span class="pl-pds">"</span></span>,
+          <span class="pl-s"><span class="pl-pds">"</span>theme<span class="pl-pds">"</span></span>       : <span class="pl-s"><span class="pl-pds">"</span>lighter<span class="pl-pds">"</span></span>,
+          <span class="pl-s"><span class="pl-pds">"</span>changeTheme<span class="pl-pds">"</span></span> : <span class="pl-c1">true</span>,
+          <span class="pl-s"><span class="pl-pds">"</span>totop<span class="pl-pds">"</span></span>       : <span class="pl-c1">false</span>,
+          <span class="pl-s"><span class="pl-pds">"</span>meta<span class="pl-pds">"</span></span>        : {
+            <span class="pl-s"><span class="pl-pds">"</span>title<span class="pl-pds">"</span></span>       : <span class="pl-s"><span class="pl-pds">"</span>WrapperTracer :: Rastreo de Objetos JS - by GUERRATRON<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>description<span class="pl-pds">"</span></span> : <span class="pl-s"><span class="pl-pds">"</span>WrapperTracer :: Rastreo de Objetos JS and its methods traits - by GUERRATRON<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>keywords<span class="pl-pds">"</span></span>    : <span class="pl-s"><span class="pl-pds">"</span>wrappertracer,js,code,debug,trait,traits,trace,tracer,wrapper,guerratron<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>charset<span class="pl-pds">"</span></span>     : <span class="pl-s"><span class="pl-pds">"</span>utf-8<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>language<span class="pl-pds">"</span></span>    : <span class="pl-s"><span class="pl-pds">"</span>es<span class="pl-pds">"</span></span>
+          },
+          <span class="pl-ii">...</span>
+        },
+        <span class="pl-ii">...</span>
+      }</pre>
+      </div>
 
-<div class="highlight highlight-source-json"><pre>{
-  <span class="pl-ii">...,</span>
-  <span class="pl-s"><span class="pl-pds">"</span>templates<span class="pl-pds">"</span></span> : {
-    <span class="pl-ii">...,</span>
-    <span class="pl-s"><span class="pl-pds">"</span>debug<span class="pl-pds">"</span></span>       : <span class="pl-c1">true</span>,
-    <span class="pl-s"><span class="pl-pds">"</span>logo<span class="pl-pds">"</span></span>        : <span class="pl-s"><span class="pl-pds">"</span>img/wrapperTracer-logo.png<span class="pl-pds">"</span></span>,
-    <span class="pl-s"><span class="pl-pds">"</span>responsive<span class="pl-pds">"</span></span>  : <span class="pl-c1">true</span>,
-    <span class="pl-s"><span class="pl-pds">"</span>author<span class="pl-pds">"</span></span>      : <span class="pl-s"><span class="pl-pds">"</span>&lt;a href='mailto:dinertron@gmail.com' title='author'&gt;GuerraTron&lt;/a&gt;<span class="pl-pds">"</span></span>,
-    <span class="pl-s"><span class="pl-pds">"</span>footer<span class="pl-pds">"</span></span>      : <span class="pl-c1">true</span>,
-    <span class="pl-s"><span class="pl-pds">"</span>copyright<span class="pl-pds">"</span></span>   :  <span class="pl-s"><span class="pl-pds">"</span>2016 (c) Juan Jose Guerra Haba<span class="pl-pds">"</span></span>,
-    <span class="pl-s"><span class="pl-pds">"</span>theme<span class="pl-pds">"</span></span>       : <span class="pl-s"><span class="pl-pds">"</span>lighter<span class="pl-pds">"</span></span>,
-    <span class="pl-s"><span class="pl-pds">"</span>changeTheme<span class="pl-pds">"</span></span> : <span class="pl-c1">true</span>,
-    <span class="pl-s"><span class="pl-pds">"</span>totop<span class="pl-pds">"</span></span>       : <span class="pl-c1">false</span>,
-    <span class="pl-s"><span class="pl-pds">"</span>meta<span class="pl-pds">"</span></span>        : {
-      <span class="pl-s"><span class="pl-pds">"</span>title<span class="pl-pds">"</span></span>       : <span class="pl-s"><span class="pl-pds">"</span>WrapperTracer :: Rastreo de Objetos JS - by GUERRATRON<span class="pl-pds">"</span></span>,
-      <span class="pl-s"><span class="pl-pds">"</span>description<span class="pl-pds">"</span></span> : <span class="pl-s"><span class="pl-pds">"</span>WrapperTracer :: Rastreo de Objetos JS and its methods traits - by GUERRATRON<span class="pl-pds">"</span></span>,
-      <span class="pl-s"><span class="pl-pds">"</span>keywords<span class="pl-pds">"</span></span>    : <span class="pl-s"><span class="pl-pds">"</span>wrappertracer,js,code,debug,trait,traits,trace,tracer,wrapper,guerratron<span class="pl-pds">"</span></span>,
-      <span class="pl-s"><span class="pl-pds">"</span>charset<span class="pl-pds">"</span></span>     : <span class="pl-s"><span class="pl-pds">"</span>utf-8<span class="pl-pds">"</span></span>,
-      <span class="pl-s"><span class="pl-pds">"</span>language<span class="pl-pds">"</span></span>    : <span class="pl-s"><span class="pl-pds">"</span>es<span class="pl-pds">"</span></span>
-    },
-    <span class="pl-ii">...</span>
-  },
-  <span class="pl-ii">...</span>
-}</pre></div>
+      <h1><a id="instalation" class="anchor" href="#instalation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>INSTALATION</h1>
 
-<h1>
-<a id="instalation" class="anchor" href="#instalation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>INSTALATION</h1>
+      <p>Copy the '<strong>doctron</strong> folder' to <em>'jsDoc/templates path'</em>. By example, in Windows: </p>
 
-<p>Copy the '<strong>doctron</strong> folder' to <em>'jsDoc/templates path'</em>. By example, in Windows: </p>
+      <pre lang="TXT"><code>C:\Program Files\nodejs\node_modules\jsdoc\templates</code></pre>
 
-<pre lang="TXT"><code>C:\Program Files\nodejs\node_modules\jsdoc\templates
-</code></pre>
+      <h2><a id="inherited" class="anchor" href="#inherited" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>INHERITED</h2>
 
-<h2>
-<a id="inherited" class="anchor" href="#inherited" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>INHERITED</h2>
+      <p>The default template for JSDoc 3 uses: <a href="http://taffydb.com/">the Taffy Database library</a> and the <a href="http://documentcloud.github.com/underscore/#template">Underscore Template library</a>.</p>
 
-<p>The default template for JSDoc 3 uses: <a href="http://taffydb.com/">the Taffy Database library</a> and the <a href="http://documentcloud.github.com/underscore/#template">Underscore Template library</a>.</p>
+      <h2><a id="authorship" class="anchor" href="#authorship" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authorship</h2>
 
-<h2>
-<a id="autoría" class="anchor" href="#autor%C3%ADa" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Autoría</h2>
-
-<p>Developed by Juan José Guerra Haba. &lt;<a href="mailto:dinertron@gmail.com">dinertron@gmail.com</a>&gt;<br>
-Copyright 2015 © <a href="mailto:dinertron@gmail.com" title="author">GuerraTron</a><br>
-License GPL v3</p>
+      <p>Developed by Juan José Guerra Haba. &lt;<a href="&#x6d;&#97;&#105;&#108;&#116;&#x6f;&#x3a;&#100;&#105;&#110;&#x65;&#x72;&#x74;&#114;&#x6f;&#110;&#64;&#x67;&#109;&#x61;&#x69;&#x6c;&#46;&#99;&#x6f;&#x6d;">&#100;&#105;&#110;&#x65;&#x72;&#x74;&#114;&#x6f;&#110;&#64;&#x67;&#109;&#x61;&#x69;&#x6c;&#46;&#99;&#x6f;&#x6d;</a>&gt;<br>
+      Copyright 2015 © <a href="&#x6d;&#97;&#105;&#108;&#116;&#x6f;&#x3a;&#100;&#105;&#110;&#x65;&#x72;&#x74;&#114;&#x6f;&#110;&#64;&#x67;&#109;&#x61;&#x69;&#x6c;&#46;&#99;&#x6f;&#x6d;" title="author">Guerratron</a><br>
+      License GPL v3</p>
 
     </section>
 
     <footer class="site-footer">
-      <span class="site-footer-owner"><img src="img/rsLIB-logo-mini.png" alt="rslib_logo" title="rsLIB logo" /> <a href="https://github.com/guerratron/doctron">Doctron</a> is maintained by <a href="https://github.com/guerratron">guerratron</a>.<img src="img/torotron_logo.png" alt="guerratron logo" title="author" /></span>
+      <span class="site-footer-owner"><img src="img/doctron_logo_mini.png" alt="doctron_logo" title="Doctron logo" /> <a href="https://github.com/guerratron/doctron">Doctron</a> is maintained by <a href="https://github.com/guerratron">guerratron</a>.<img src="img/torotron_logo.png" alt="guerratron logo" title="author" /></span>
 
       <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> modified by <a href="https://github.com/guerratron">guerratron</a>. <img src="img/torotron_logo.png" alt="guerratron logo" title="guerratron logo" /></span>
     </footer>

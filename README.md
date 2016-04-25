@@ -8,7 +8,7 @@
 > ----------------------------------------------------------------------------------------------------
 
 # DOCTRON TEMPLATE
-[![doctron logo](img/doctron-logo.png "doctron Github page")](http://guerratron.github.io/doctron "Doctron Page") 
+[![doctron logo](./static/img/doctron-logo.png "doctron Github page")](http://guerratron.github.io/doctron "Doctron Page") 
 Responsive jsDoc template. (based in *default template*) 
 
 # DESCRIPTION

@@ -69,9 +69,9 @@ These options could be as follows in a configuration file sample JSDoc :
       "keywords"    : "wrappertracer,js,code,debug,trait,traits,trace,tracer,wrapper,guerratron",
       "charset"     : "utf-8",
       "language"    : "es"
-    }
+    },
     ...
-  }
+  },
   ...
 }
 ````

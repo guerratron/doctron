@@ -1,0 +1,75 @@
+/*RESPONSIVE*/
+	@media (max-width: 600px) {
+		.media600{
+			display: block;
+		}
+    body{
+      font-size: 120%;
+    }
+		#main {
+				float: none;
+				width: 100%;
+		}
+		nav{
+			position: absolute;
+			display: block;
+			float: none;
+			right: 0.5%;
+			top: -5%;
+			width: 70%;
+			padding: 6px;
+		}
+		nav .itemsNav {
+			display: none;
+		}
+
+		.button-menu{
+			display: inline-block;
+		}
+    
+    .changeTheme{
+      border:3px ridge maroon;
+      padding: 1px 6px;
+      font-size: normal;
+    }
+    
+		/*HEADING*/
+		h1{
+				font-family: 'Open Sans Light', sans-serif;
+				font-size: 38px;
+				letter-spacing: -2px;
+				margin: 6px 12px 10px;
+		}
+
+		h2, h3
+		{
+				font-size: 20px;
+				font-weight: 600;
+				letter-spacing: -1px;
+				margin-bottom: 12px;
+		}
+
+		h4
+		{
+				font-size: 18px;
+				letter-spacing: -0.33px;
+				margin-bottom: 6px;
+				color: #4d4e53;
+		}
+
+		h5, .container-overview .subsection-title
+		{
+				font-size: 110%;
+				font-weight: bold;
+				letter-spacing: -0.01em;
+				margin: 4px 0 1px 0;
+		}
+
+		h6
+		{
+				font-size: 100%;
+				letter-spacing: -0.01em;
+				margin: 3px 0 1px 0;
+				font-style: italic;
+		}
+	}

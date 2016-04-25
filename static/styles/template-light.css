@@ -1,0 +1,107 @@
+/*NO RESPONSIVE*/
+	html{
+			background-color: #999;
+	}
+
+	body{
+			/*font-family: 'Open Sans', sans-serif;*/
+			font-family:calibri,"courier","serif";
+			color: #4d4e53;
+			background-color: whiteSmoke;
+	}
+
+	#main {
+			box-shadow: 2px 4px 6px navy;
+	}
+  section{
+    background: white;
+  }
+  h1,h2,h3,h4,h5,h6{
+    color: #333333;
+  }
+  .params .name, .props .name, .name code {
+    color: #444444;
+    font-family: Consolas,Monaco,"Andale Mono",monospace;
+  }
+  a, a:visited, a:active {
+    color: #0095dd;
+  }
+  nav{
+    background: white;
+    box-shadow: 1px 2px 2px gray;
+  }
+  nav ul a, nav ul a:visited, nav ul a:active {
+      color: steelBlue;
+      font-family: Consolas,Monaco,"Andale Mono",monospace;
+  }
+	nav .itemsNav{
+			background: whiteSmoke;
+			color: #333333;
+	}
+	nav .itemsNav:hover{
+			background: lightYellow;
+			color: whiteSmoke;
+	}
+  nav .itemsNav h3:hover{
+			color: #666666;
+	}
+	nav 	.itemsNav-media600 h3{
+			color: white;
+	}
+  nav .itemsNav-media600 ul a, nav .itemsNav-media600 ul a:visited, nav .itemsNav-media600 ul a:active {
+      color: royalBlue;
+      font-family: Consolas,Monaco,"Andale Mono",monospace;
+  }
+	
+	article .subsection-body-item{
+		background: whiteSmoke;
+	}
+	article .subsection-body-item:hover{
+		background: lightYellow;
+	}
+/*BUTTONS*/
+	article .button-plusMinus{
+		border: 1px solid navy;
+		box-shadow: 1px 2px 4px darkBlue;
+		background: darkBlue;
+		color: white;
+	}
+	
+	.totop{
+		border: 1px solid gray;
+		box-shadow: 1px 2px 4px darkGray;
+		background: silver;
+		color: white;
+	}
+	.totop:hover{
+		background: #333333;
+	}
+  
+  /* IF RESPONSIVE */
+  nav .itemsNav-media600 { /* activate by button-menu with javascript */
+    /*background: whiteSmoke;*/
+    color: #333333;
+  }
+  nav 	.itemsNav-media600 h3{
+			color: white;
+	}
+  nav 	.itemsNav-media600:hover{
+      background: silver;
+      color: whiteSmoke;
+  }
+  nav 	.itemsNav-media600:hover h4{
+      color: white;
+  }
+  .container-button-menu{
+    border: 1px solid lightGray;
+    box-shadow: 1px 2px 4px gray;
+    background: whiteSmoke;
+    color: white;
+  }
+  .button-menu{
+    border: 1px solid gray;
+    box-shadow: 1px 2px 4px black;
+    background: silver;
+    color: white;
+  }
+  /* END IF RESPONSIVE */

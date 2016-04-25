@@ -1,0 +1,15 @@
+<?js
+var data = obj;
+var self = this;
+var debug = env.conf.templates.debug;
+?>
+
+		<?js if (data.kind === 'package') { ?>
+				<h3><?js= data.name ?> <?js= data.version ?></h3>
+		<?js } ?>
+		<?js if (data.readme) { ?>
+				<section>
+						<?js if(data.logo) { ?> <img class="logo-readme" src="<?js= data.logo ?>" alt="logo" title="<?js= data.title ?> logo" /> <?js } ?>
+						<article><?js= data.readme ?></article>
+				</section>
+		<?js } ?>		

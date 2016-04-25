@@ -1,0 +1,67 @@
+<!DOCTYPE html><?js var templates = env.conf.templates; ?>
+<html lang="<?js= (templates.meta.language ? templates.meta.language : "en") ?>">
+<head>
+    <meta charset="<?js= (templates.meta.charset ? templates.meta.charset : "utf-8") ?>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<?js if(templates.meta.description){ ?> <meta name="description" content="<?js= templates.meta.description ?>" /> <?js } ?>
+		<?js if(templates.meta.keywords){ ?> <meta name="keywords" content="<?js= templates.meta.keywords ?>" /> <?js } ?>
+    <title>JSDoc: <?js= (templates.meta.title ? templates.meta.title : title) ?></title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css" />
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css" />
+		<link type="text/css" rel="stylesheet" href="styles/template.css" />
+    <link id="cssTheme" type="text/css" rel="stylesheet" href="styles/template<?js= (templates.theme ? ("-" + templates.theme) : "-light") ?>.css" />
+    <?js if(templates.responsive) { ?><link type="text/css" rel="stylesheet" href="styles/template-responsive.css" /><?js } ?>
+</head>
+
+<body>
+
+<div id="main">
+<?js if(templates.logo){ ?><img class="logo" title="logo <?js= templates.applicationName ?>" src="<?js= templates.logo ?>" style="float:right;" /><?js } ?>
+    <h1 class="page-title"><?js= title ?></h1>
+
+    <?js= content ?>
+</div>
+
+<nav>
+    <?js= this.nav ?>
+</nav>
+
+<br class="clear">
+
+<?js if(templates.footer){ ?>
+	<footer>
+			Documentación generada por <?js= templates.author ?>, con <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a><?js if(templates && templates.default && templates.default.includeDate !== false) { ?> on <?js= (new Date()) ?><?js } ?>
+			<?js if(templates.copyright){ ?> &copy; <?js= templates.copyright ?> <?js } ?>
+	</footer>
+<?js } ?>
+
+  <?js if(templates.changeTheme){ ?>
+    <select class="changeTheme" id="selCssTheme" default="light" title="change theme">
+      <option value="light" selected>Light</option>
+      <option value="dark">Dark</option>
+    </select>
+  <?js } ?>
+  
+<?js if(templates.totop){ ?><a data-scroll data-options='{ "easing": "easeOutQuad" }' class="totop" href="#"><span style="font-size: x-large">&Delta;</span></a><?js } ?>
+
+<?js this.debug = templates.debug; ?>
+<?js if(this.debug) { //DEBUG ?>
+		<?js= this.debugObjectView(this, "this", "layout") ?> 
+		<?js= this.debugObjectView(obj, "data", "layout") ?>
+		<?js= this.debugObjectView(env, "env", "layout") ?>
+		<?js= this.debugObjectView(templates, "templates", "layout") ?> 
+<?js } ?>
+
+<script> prettyPrint(); </script>
+<script type="text/javascript" src="scripts/linenumber.js"> </script>
+<script type="text/javascript" src="scripts/smooth-scroll/smooth-scroll.min.js"> </script>
+<script type="text/javascript" src="scripts/template.js"> </script>
+
+</body>
+</html>

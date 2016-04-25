@@ -1,0 +1,121 @@
+/*NO THEME - NO RESPONSIVE*/
+	html{
+			font-size: 14px;
+	}
+
+	body{
+			/*font-family: 'Open Sans', sans-serif;*/
+			font-size:140%;
+			line-height: 1.5;
+	}
+
+	#main {
+			float: left;
+			width: 70%;
+			box-sizing: border-box;
+			text-align: justify;
+	}
+  .params .name, .props .name, .name code {
+    font-size: 100%;
+  }
+  a, a:visited, a:active {
+    text-decoration: none;
+  }
+  nav{
+    padding: 6px;
+  }
+	nav .itemsNav{
+			display: block;
+	}
+  nav ul a, nav ul a:visited, nav ul a:active {
+      line-height: 18px;
+  }
+  
+  .changeTheme{
+    position:absolute;
+    border:4px ridge maroon;
+    padding: 1px 10px;
+    top:1%;
+    right:1%;
+    font-size: larger;
+    background: whiteSmoke;
+    color: #333333;
+  }
+
+/*BUTTONS*/
+	article .button-plusMinus{
+		display: inline-block;
+		border-radius: 4px;
+		padding: 3px;
+		font-size: 0.6em;
+		line-height: 0.6em;
+		height: 0.8em;
+		width: 0.8em;
+		text-align: center;
+		vertical-align: middle;
+		cursor: pointer;
+	}
+	
+	.totop{
+		display: inline-block;
+		position: fixed;
+		float:right;
+    bottom: 5%;
+		right:1%;
+		opacity: 0.5;
+		border-radius: 4px;
+		font-weight: bolder;
+		padding: 2px;
+		width: 3.2em;
+		text-align: center;
+		vertical-align: middle;
+    text-decoration: none;
+		cursor: pointer;
+    z-index: 1000;
+	}
+	.totop:hover{
+		opacity: 0.8;
+    text-decoration: none;
+	}
+  .totop:link{
+    text-decoration: none;
+  }
+  .totop:visited{
+    text-decoration: none;
+  }
+
+	nav .itemsNav-media600 {
+			display: none; /* activate by button-menu with javascript */
+	}
+	.media600{
+			display: none;
+	}
+  
+  /* IF RESPONSIVE */
+  nav .itemsNav-media600 {
+    display: none; /* activate by button-menu with javascript */
+    position: relative;
+    opacity: 0.9;
+  }
+  nav 	.itemsNav-media600 h4{
+      font-weight: bolder;
+  }
+  .container-button-menu{
+    border-radius: 4px;
+    padding: 3px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  .button-menu{
+    border-radius: 4px;
+    padding: 3px;
+    font-size: 1em;
+    line-height: 1em;
+    height: 1.1em;
+    width: 1.1em;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  /* END IF RESPONSIVE */

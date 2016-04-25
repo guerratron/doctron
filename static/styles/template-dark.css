@@ -1,0 +1,108 @@
+/*NO RESPONSIVE*/
+	html{
+			background-color: #333333;
+	}
+
+	body{
+			/*font-family: 'Open Sans', sans-serif;*/
+			font-family:calibri,"courier","serif";
+			color: white;
+			background-color: silver;
+	}
+
+	#main {
+			box-shadow: 2px 4px 6px whiteSmoke;
+	}
+  section{
+    background: #333333;
+  }
+  h1,h2,h3,h4,h5,h6{
+    color: lightYellow;
+  }
+  .params .name, .props .name, .name code {
+    color: #AAAAAA;
+    font-family: Consolas,Monaco,"Andale Mono",monospace;
+  }
+  a, a:visited, a:active {
+    color: aquamarine;
+  }
+  
+  nav{
+    background: lightGray;
+    box-shadow: 1px 2px 2px whiteSmoke;
+  }
+  nav ul a, nav ul a:visited, nav ul a:active {
+      color: skyBlue;
+      font-family: Consolas,Monaco,"Andale Mono",monospace;
+  }
+	nav .itemsNav{
+			background: #555555;
+			color: #aaaaaa;
+	}
+	nav .itemsNav:hover{
+			background: #444444;
+			color: silver;
+	}
+  nav .itemsNav h3:hover{
+			color: #999999;
+	}
+	nav 	.itemsNav-media600 h3{
+			color: #333333;
+	}
+  nav .itemsNav-media600 ul a, nav .itemsNav-media600 ul a:visited, nav .itemsNav-media600 ul a:active {
+      color: royalBlue;
+      font-family: Consolas,Monaco,"Andale Mono",monospace;
+  }
+	
+	article .subsection-body-item{
+		background: #555555;
+	}
+	article .subsection-body-item:hover{
+		background: #444444;
+	}
+/*BUTTONS*/
+	article .button-plusMinus{
+		border: 1px solid whiteSmoke;
+		box-shadow: 1px 2px 4px lightGray;
+		background: silver;
+		color: #333333;
+	}
+	
+	.totop{
+		border: 1px solid whiteSmoke;
+		box-shadow: 1px 2px 4px lightGray;
+		background: silver;
+		color: white;
+	}
+	.totop:hover{
+		background: gray;
+	}
+  
+  /* IF RESPONSIVE */
+  nav .itemsNav-media600 { /* activate by button-menu with javascript */
+    /*background: whiteSmoke;*/
+    color: #333333;
+  }
+  nav 	.itemsNav-media600 h3{
+			color: white;
+	}
+  nav 	.itemsNav-media600:hover{
+      background: silver;
+      color: whiteSmoke;
+  }
+  nav 	.itemsNav-media600:hover h4{
+      color: white;
+  }
+  .container-button-menu{
+    border: 1px solid lightGray;
+    box-shadow: 1px 2px 4px gray;
+    background: whiteSmoke;
+    color: white;
+  }
+  .button-menu{
+    border: 1px solid gray;
+    box-shadow: 1px 2px 4px black;
+    background: silver;
+    color: white;
+  }
+  /* END IF RESPONSIVE */

@@ -33,16 +33,16 @@ The **doctron** template is based in *'Default template'*, but I adding it a few
 This options for configuration they may be included in **jsDoc.conf.json** configuration file within the *'templates'* section, thus the path will be more or less: 
   > jsDoc.conf.json {..., templates: { ... }, ...}  
   
-  - **debug** : [boolean] Allow enabled the *debug-zone*
-  - **logoFile**  : [string] Let the relative path to logo image (png, jpg, gif)
-  - **logoLink**  : [string] Logo as link to any site
-  - **theme** : [string] The name of style theme (light or dark)
-  - **totop** : [boolean] To Top button.
-  - **changeTheme**  : [boolean] A *select box* to change the theme.
-  - **responsive**    : [boolean] Allow show a responsive design to different screen types and devices
-  - **author**        : [string]  By example a link to author email, on 'footer'. The footer section must be enabled
-  - **copyright**     : [string] A string representing the copyright
-  - **meta**          : [object] A javascript object indicating some *HTML meta-tags*:
+  - **debug**       : [boolean] Allow enabled the *debug-zone*
+  - **logoFile**    : [string] Let the relative path to logo image (png, jpg, gif)
+  - **logoLink**    : [string] Logo as link to any site
+  - **theme**       : [string] The name of style theme (light or dark)
+  - **totop**       : [boolean] To Top button.
+  - **changeTheme** : [boolean] A *select box* to change the theme.
+  - **responsive**  : [boolean] Allow show a responsive design to different screen types and devices
+  - **author**      : [string]  By example a link to author email, on 'footer'. The footer section must be enabled
+  - **copyright**   : [string] A string representing the copyright
+  - **meta**        : [object] A javascript object indicating some *HTML meta-tags*:
     - **title**       : [string] It is the page title
     - **description** : [string] The page description, very useful for **SEO** and search engines
     - **keywords**    : [string] Like the above, it is used with SEO
@@ -56,8 +56,8 @@ These options could be as follows in a configuration file sample JSDoc :
   "templates" : {
     ...,
     "debug"       : true,
-    "logoFile"        : "img/wrapperTracer-logo.png",
-    "logoLink"        : "http://guerratron.github.io/WrapperTracer",
+    "logoFile"    : "img/wrapperTracer-logo.png",
+    "logoLink"    : "http://guerratron.github.io/WrapperTracer",
     "responsive"  : true,
     "author"      : "<a href='mailto:dinertron@gmail.com' title='author'>GuerraTron</a>",
     "footer"      : true,

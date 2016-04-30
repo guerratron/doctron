@@ -87,7 +87,7 @@ C:\Program Files\nodejs\node_modules\jsdoc\templates
 ## INHERITED
 The default template for JSDoc 3 uses: [the Taffy Database library](http://taffydb.com/) and the [Underscore Template library](http://documentcloud.github.com/underscore/#template).
 
-## Autoría
+## Authorship
 Developed by Juan José Guerra Haba. &lt;dinertron@gmail.com&gt;    
 Copyright 2015 &copy; <a href="&#x6d;&#97;&#105;&#108;&#116;&#x6f;&#x3a;&#100;&#105;&#110;&#x65;&#x72;&#x74;&#114;&#x6f;&#110;&#64;&#x67;&#109;&#x61;&#x69;&#x6c;&#46;&#99;&#x6f;&#x6d;" title="author">GuerraTron</a>  
 License GPL v3

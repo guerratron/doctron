@@ -22,7 +22,16 @@
 <body>
 
 <div id="main">
-<?js if(templates.logo){ ?><img class="logo" title="logo <?js= templates.applicationName ?>" src="<?js= templates.logo ?>" style="float:right;" /><?js } ?>
+<?js if(templates.logoFile){ ?>
+  <?js if(templates.logoLink){ ?>
+    <a href="<?js= templates.logoLink ?>" />
+  <?js } ?>
+      <img class="logo" src="<?js= templates.logoFile ?>" />
+  <?js if(templates.logoLink){ ?>
+    </a>
+  <?js } ?>
+<?js } ?>
+    <br />
     <h1 class="page-title"><?js= title ?></h1>
 
     <?js= content ?>
@@ -34,12 +43,24 @@
 
 <br class="clear">
 
-<?js if(templates.footer){ ?>
+<?js if(templates && templates.footer){
+     var footer =  templates.footer;
+     var author = (templates.author ? templates.author : "");
+     var date = ((templates.default && templates.default.includeDate !== false) ? new Date() : "");
+     var copyright = (templates.copyright ? templates.copyright : "");
+     footer = footer.split("$AUTHOR$").join("<strong>"+ author +"</strong>"); //replace("$AUTHOR$", "<strong>"+ author +"</strong>");
+     footer = footer.split("$DATE$").join("<em>"+ date +"</em>"); //footer.replace("$DATE$", "<em>"+ date +"</em>");
+     footer = footer.split("$COPYRIGHT$").join("&copy; <em>"+ copyright +"</em>"); //footer.replace("$COPYRIGHT$", "&copy; <em>"+ copyright +"</em>");
+     footer = footer.split("$BR$").join("<br />"); //footer.replaceAll("$BR$", "<br />");
+     footer = footer.split("$HR$").join("<hr />"); //footer.replaceAll("$HR$", "<hr />");
+?>
 	<footer>
-			Documentación generada por <?js= templates.author ?>, con <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a><?js if(templates && templates.default && templates.default.includeDate !== false) { ?> on <?js= (new Date()) ?><?js } ?>
-			<?js if(templates.copyright){ ?> &copy; <?js= templates.copyright ?> <?js } ?>
+			<?js= footer ?>
 	</footer>
 <?js } ?>
+  <div id="credits">
+    <small class="doctronCredits">based on the <em>'Doctron template'</em> <a href="http://guerratron.github.io/doctron" title="Doctron GitHub template"><img src="img/doctron-github-mini.png" /></a> &emsp; by <a href="mailto:dinertron@gmail.com" /> <img src="img/guerratron-logo-mini.png" title="Guerratron" /></a></small>
+  </div>
 
   <?js if(templates.changeTheme){ ?>
     <select class="changeTheme" id="selCssTheme" default="light" title="change theme">
@@ -48,7 +69,7 @@
     </select>
   <?js } ?>
   
-<?js if(templates.totop){ ?><a data-scroll data-options='{ "easing": "easeOutQuad" }' class="totop" href="#"><span style="font-size: x-large">&Delta;</span></a><?js } ?>
+<?js if(templates.totop){ ?><a data-scroll data-options='{ "easing": "easeOutQuad" }' class="totop" href="#" title="to Top"><span style="font-size: x-large">&Delta;</span></a><?js } ?>
 
 <?js this.debug = templates.debug; ?>
 <?js if(this.debug) { //DEBUG ?>

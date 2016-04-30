@@ -34,7 +34,8 @@ This options for configuration they may be included in **jsDoc.conf.json** confi
   > jsDoc.conf.json {..., templates: { ... }, ...}  
   
   - **debug** : [boolean] Allow enabled the *debug-zone*
-  - **logo**  : [string] Let the relative path to logo image (png, jpg, gif - min 256px)
+  - **logoFile**  : [string] Let the relative path to logo image (png, jpg, gif)
+  - **logoLink**  : [string] Logo as link to any site
   - **theme** : [string] The name of style theme (light or dark)
   - **totop** : [boolean] To Top button.
   - **changeTheme**  : [boolean] A *select box* to change the theme.
@@ -55,7 +56,8 @@ These options could be as follows in a configuration file sample JSDoc :
   "templates" : {
     ...,
     "debug"       : true,
-    "logo"        : "img/wrapperTracer-logo.png",
+    "logoFile"        : "img/wrapperTracer-logo.png",
+    "logoLink"        : "http://guerratron.github.io/WrapperTracer",
     "responsive"  : true,
     "author"      : "<a href='mailto:dinertron@gmail.com' title='author'>GuerraTron</a>",
     "footer"      : true,

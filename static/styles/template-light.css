@@ -16,9 +16,15 @@
   section{
     background: white;
   }
-  h1,h2,h3,h4,h5,h6{
+  h1,h2,h3,h4,h6{
     color: #333333;
   }
+  /*h1,h2,h3,h4,h5,h6{
+    color: #333333;
+  }
+  div[class^="debug-inner"] > h5[id^="degub-zone"]{
+    color: none;
+  }*/
   .params .name, .props .name, .name code {
     color: #444444;
     font-family: Consolas,Monaco,"Andale Mono",monospace;

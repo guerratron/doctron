@@ -83,6 +83,23 @@
   .totop:visited{
     text-decoration: none;
   }
+  
+  .logo{
+    border: none;
+    border-radius: 6px;
+    box-shadow: 1px 2px 4px lightGray;
+  }
+  
+  .doctronCredits{
+    font-size: smaller;
+    font-weight: lighter;
+    color: #444444;
+    text-shadow: 1px 1px 1px;
+    opacity: 0.5;
+  }
+  .doctronCredits:hover{
+    opacity: 1;
+  }
 
 	nav .itemsNav-media600 {
 			display: none; /* activate by button-menu with javascript */
